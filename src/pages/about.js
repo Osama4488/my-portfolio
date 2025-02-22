@@ -18,6 +18,18 @@ export default function About() {
       <p>
         Outside of coding, I have a keen interest in **backend development**, **competitive programming** (HackerRankID: syed_osama_ali_1), and **sports**.
       </p>
+
+
+      {/* Download CV Button */}
+      <a 
+  href="https://drive.google.com/file/d/1W2CNwLA0tXLIw-0g13itSCFmHqVau9kg/view?usp=sharing" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="mt-10 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-all"
+>
+  View My CV
+</a>
+
     </div>
   );
 }
