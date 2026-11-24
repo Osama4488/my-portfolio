@@ -9,13 +9,15 @@ export default function Home() {
           Hey, I’m <span className="text-blue-400">Osama!</span>
         </h1>
         <p className="text-lg mb-6">
-          I'm a <strong>Senior Software Engineer</strong> specializing in
-          <span className="text-blue-300 font-medium"> React.js, Next.js, and Node.js</span>.
-          I build high-performance, scalable web applications, focusing on
-          **UI/UX design, server-side rendering, and cloud deployment**.
+          I&apos;m a <strong>Senior Full-Stack Software Engineer</strong> building
+          secure fintech and AI-enabled products with
+          <span className="text-blue-300 font-medium"> React, TypeScript, ASP.NET Core, and Node.js</span>.
+          My work spans polished interfaces, REST APIs, authentication, data workflows,
+          reporting, and production debugging.
         </p>
         <p className="mb-6">
-          Welcome to my portfolio! Explore my work and discover how I turn ideas into reality.
+          Explore selected public projects and professional product work. Employer source
+          code and non-public environments are intentionally kept confidential.
         </p>
 
         {/* CTA Buttons */}

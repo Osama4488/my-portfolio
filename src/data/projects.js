@@ -1,67 +1,89 @@
-// data/projects.js
 const projects = [
   {
     id: 1,
-    title: "BrandOverFlow",
+    title: "Interview SaaS V2",
     description:
-      "BrandOverflow is an all-in-one SEO platform that provides a suite of tools to help businesses analyze their search engine rankings, track keyword performance, and optimize their overall SEO strategy.",
-    techStack: ["NextJS", "Node.js", "AWS"],
-    // New Unsplash image related to SEO & analytics
+      "A Dockerized multi-service interview platform with a Next.js frontend, a dedicated authentication API, and a protected content API for categories and questions.",
+    techStack: ["Next.js", "TypeScript", "Node.js", "MongoDB", "Docker"],
     image:
-      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?crop=entropy&cs=tinysrgb&fit=crop&w=600&h=400",
-    liveLink: "https://dash.brandoverflow.com/login",
+      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?crop=entropy&cs=tinysrgb&fit=crop&w=600&h=400",
+    links: [
+      {
+        label: "Auth API",
+        href: "https://github.com/Osama4488/interview-auth-api-v2",
+      },
+      {
+        label: "Frontend",
+        href: "https://github.com/Osama4488/interview-web-v2",
+      },
+      {
+        label: "Content API",
+        href: "https://github.com/Osama4488/interview-content-api-v2",
+      },
+    ],
+    note: "Public source repositories available. Live deployment is omitted until all services are healthy.",
   },
   {
     id: 2,
-    title: "Thanos.ai",
+    title: "BrandOverflow",
     description:
-      "AI Blog Writer that generates full blog posts using GPT models in real time.",
-    techStack: ["Next.js", "ChatGPT API", "Tailwind CSS"],
+      "An SEO platform for analyzing rankings, tracking keyword performance, and improving search strategy. Contributed to production product development across frontend and supporting services.",
+    techStack: ["Next.js", "Node.js", "AWS"],
     image:
-      "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?crop=entropy&cs=tinysrgb&fit=crop&w=600&h=400",
-    githubLink: "",
-    liveLink: "https://thanos.ai/ai-writer",
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?crop=entropy&cs=tinysrgb&fit=crop&w=600&h=400",
+    links: [
+      { label: "Product Site", href: "https://dash.brandoverflow.com/login" },
+    ],
   },
   {
     id: 3,
-    title: "vTrader Web",
+    title: "Thanos.ai",
     description:
-      "A FinTech trading app featuring real-time data, complex ticket widget, alerts, and more.",
-    techStack: ["React", "Web Workers", "Lazy Loading"],
-    // New Unsplash image related to stock market & trading
+      "An AI writing product that generated long-form content through GPT-powered workflows and an interactive editor experience.",
+    techStack: ["Next.js", "ChatGPT API", "Tailwind CSS"],
     image:
-      "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop=entropy&cs=tinysrgb&fit=crop&w=600&h=400",
-    liveLink: "https://nouvelle-uat.vtraderweb.com/",
+      "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?crop=entropy&cs=tinysrgb&fit=crop&w=600&h=400",
+    note: "Previous production work; a public demo is not currently available.",
   },
   {
     id: 4,
-    title: "MailWarm",
+    title: "vTrader Web",
     description:
-      "An email warm-up and deliverability optimization platform, ensuring messages reach the inbox instead of spam. I designed the front-end UI and built core functionalities like real-time warm-up stats, domain management, and automated email flows.",
-    techStack: ["React", "Node.js", "SASS"],
+      "A fintech trading platform featuring multi-window workflows, cross-window messaging, worker synchronization, alerts, and complex options-ticket interfaces.",
+    techStack: ["React", "TypeScript", "Web Workers"],
     image:
-      "https://images.unsplash.com/photo-1587829741301-dc798b83add3?crop=entropy&cs=tinysrgb&fit=crop&w=600&h=400",
-    liveLink: "https://mailwarm.io/",
+      "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop=entropy&cs=tinysrgb&fit=crop&w=600&h=400",
+    note: "Employer production work. Source code and non-public environments are confidential.",
   },
   {
     id: 5,
-    title: "TopicMojo",
+    title: "MailWarm",
     description:
-      "A powerful content research tool that analyzes search engines and social media to uncover trending topics, popular questions, and keyword opportunities. I contributed to the front-end design and implemented key functionalities like AI content generation, topic modeling, and real-time search insights.",
-    techStack: ["Next.js", "Tailwind CSS", "Node.js"],
+      "An email deliverability platform with warm-up statistics, domain management, and automated email workflows.",
+    techStack: ["React", "Node.js", "Sass"],
     image:
-      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?crop=entropy&cs=tinysrgb&fit=crop&w=600&h=400",
-    liveLink: "https://topicmojo.com/",
+      "https://images.unsplash.com/photo-1587829741301-dc798b83add3?crop=entropy&cs=tinysrgb&fit=crop&w=600&h=400",
+    links: [{ label: "Product Site", href: "https://mailwarm.io/" }],
   },
   {
     id: 6,
-    title: "KeywordPro",
+    title: "TopicMojo",
     description:
-      "An advanced keyword research and SEO analysis tool that helps users find high-performing keywords, track rankings, and optimize content strategies. I contributed to the front-end design and built key functionalities such as real-time keyword insights, competitor analysis, and AI-driven recommendations.",
+      "A content-research product for discovering topics, popular questions, keyword opportunities, and AI-assisted content insights.",
     techStack: ["Next.js", "Tailwind CSS", "Node.js"],
     image:
       "https://images.unsplash.com/photo-1557804506-669a67965ba0?crop=entropy&cs=tinysrgb&fit=crop&w=600&h=400",
-    liveLink: "https://keywordpro.io/",
+    links: [{ label: "Product Site", href: "https://topicmojo.com/" }],
+  },
+  {
+    id: 7,
+    title: "KeywordPro",
+    description:
+      "A keyword-research and SEO-analysis product with ranking insights, competitor analysis, and AI-assisted recommendations.",
+    techStack: ["Next.js", "Tailwind CSS", "Node.js"],
+    image:
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?crop=entropy&cs=tinysrgb&fit=crop&w=600&h=400",
+    note: "Previous production work; the former public URL is no longer available.",
   },
 ];
 

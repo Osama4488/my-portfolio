@@ -1,9 +1,7 @@
 
 import Image from "next/image";
-import Link from "next/link";
-
 export default function ProjectCard({ project }) {
-  const { title, description, techStack, image, githubLink, liveLink } = project;
+  const { title, description, techStack, image, links = [], note } = project;
 
   return (
     <div className="relative overflow-hidden rounded-xl bg-[#1e293b] text-gray-200 shadow-md border border-gray-700 group">
@@ -39,26 +37,22 @@ export default function ProjectCard({ project }) {
           </div>
         )}
 
-        {/* Links */}
-        <div className="mt-4 flex items-center space-x-4">
-          {githubLink && (
-            <Link
-              href={githubLink}
+        {note && (
+          <p className="mb-4 text-sm leading-6 text-gray-400">{note}</p>
+        )}
+
+        <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2">
+          {links.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
               target="_blank"
-              className="text-blue-400 font-semibold hover:text-blue-500 transition"
+              rel="noopener noreferrer"
+              className="text-blue-400 font-semibold hover:text-blue-300 transition"
             >
-              GitHub
-            </Link>
-          )}
-          {liveLink && (
-            <Link
-              href={liveLink}
-              target="_blank"
-              className="text-blue-400 font-semibold hover:text-blue-500 transition"
-            >
-              Live Demo
-            </Link>
-          )}
+              {link.label}
+            </a>
+          ))}
         </div>
       </div>
     </div>
